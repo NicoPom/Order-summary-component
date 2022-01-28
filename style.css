@@ -1,0 +1,162 @@
+/*====== PAGE LAYOUT ======*/
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+
+}
+
+body{
+	height: 100%;
+	min-width: 375px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 ,p{
+	margin: 0;
+}
+.card{
+	width: 90%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card__image{
+	width: 100%;
+}
+
+.card__text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 8%;
+}
+
+.card__description{
+	text-align: center;
+	padding: 0px 10px;
+}
+
+.card__proceed{
+	text-align: center;
+}
+
+.card__plan{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0px 10px;
+	margin: 15px;
+	gap: 1rem;
+}
+
+.plan__logo .plan__change{
+	flex-grow: 1;
+}
+.plan__type{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+}
+
+/*====== PAGE STYLE ======*/
+
+html{
+	background: hsl(225, 100%, 94%);
+}
+
+body{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+}
+
+.card{
+	border-radius: 20px ;
+	background: white;
+	box-shadow: 0px 15px 20px hsl(224.2, 41%, 72.7%);
+}
+
+.card__image{
+	border-radius: 20px 20px 0px 0px;
+}
+
+.title{
+	font-weight: 900;
+	font-size: 1.45rem;
+	color: hsl(223, 47%, 23%);
+}
+
+.card__description{
+	line-height: 1.5rem;
+}
+
+.annual{
+	font-weight: 800;
+	color: hsl(223, 47%, 23%);
+}
+
+.price{
+	color: hsl(224, 23%, 55%);
+}
+
+.plan__change{
+	color: hsl(244.9, 59.3%, 48.2%);
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.card__proceed{
+	background: hsl(245, 75%, 52%);
+	width: 100%;
+	padding: 15px;
+	font-weight: 700;
+	border-radius: 12px;
+	box-shadow: 0px 10px 15px hsl(224.2, 41%, 72.7%);
+}
+
+.proceed{
+	text-decoration: none;
+	color: white;
+}
+
+.card__cancel{
+	font-weight: 700;
+}
+
+.cancel{
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+}
+
+/*===== HOVER STATE =====*/
+
+.plan__change:hover{
+	text-decoration: none;
+	color: hsl(269, 41%, 50%);
+}
+.card__proceed:hover{
+	background: hsl(269, 41%, 50%);
+}
+
+.cancel:hover{
+	color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 480px) {
+html{
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+}
