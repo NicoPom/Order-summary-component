@@ -26,4 +26,4 @@ Your users should be able to:
 
 ## Author
 
-- Frontend Mentor - https://www.frontendmentor.io/profile/Anguluth
+- Frontend Mentor - https://www.frontendmentor.io/profile/NicoPom
