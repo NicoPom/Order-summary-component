@@ -1,4 +1,4 @@
-/*====== PAGE LAYOUT ======*/
+/*===== PAGE LAYOUT =====*/
 *,
 *::before,
 *::after{
@@ -22,6 +22,7 @@ body{
 h1 ,p{
 	margin: 0;
 }
+
 .card{
 	width: 90%;
 	max-width: 400px;
@@ -56,7 +57,7 @@ h1 ,p{
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 0px 10px;
+	padding: 20px ;
 	margin: 15px;
 	gap: 1rem;
 }
@@ -70,7 +71,7 @@ h1 ,p{
 	flex-grow: 2;
 }
 
-/*====== PAGE STYLE ======*/
+/*===== PAGE STYLE =====*/
 
 html{
 	background: hsl(225, 100%, 94%);
@@ -95,12 +96,17 @@ body{
 
 .title{
 	font-weight: 900;
-	font-size: 1.45rem;
+	font-size: 1.7rem;
 	color: hsl(223, 47%, 23%);
 }
 
 .card__description{
 	line-height: 1.5rem;
+}
+
+.card__plan{
+	background: #f8f9fe;
+	border-radius: 15px;
 }
 
 .annual{
@@ -141,6 +147,10 @@ body{
 	color: hsl(224, 23%, 55%);
 }
 
+footer{
+	padding: 20px;
+}
+
 /*===== HOVER STATE =====*/
 
 .plan__change:hover{
@@ -154,6 +164,8 @@ body{
 .cancel:hover{
 	color: hsl(223, 47%, 23%);
 }
+
+/*===== RESPONSIVE =====*/
 
 @media only screen and (min-width: 480px) {
 html{
